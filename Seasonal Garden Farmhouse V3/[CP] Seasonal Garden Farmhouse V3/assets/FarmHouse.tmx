@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="20" height="24" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="12">
+ <properties>
+  <property name="DayTiles" value="Back 11 1 198 Back 12 1 199 Back 13 1 200 Back 14 1 201 Back 15 1 202 Back 16 1 203 Back 17 1 204 Back 18 1 205 Back 11 2 220 Back 12 2 221 Back 13 2 222 Back 14 2 223 Back 15 2 224 Back 16 2 225 Back 17 2 226 Back 18 2 227 Buildings 11 3 242 Buildings 12 3 243 Buildings 13 3 244 Buildings 14 3 245 Buildings 15 3 246 Buildings 16 3 247 Buildings 17 3 248 Buildings 18 3 249 Back 11 4 275 Back 12 4 276 Back 13 4 275 Back 14 4 276 Back 15 4 275 Back 16 4 276 Back 17 4 275 Back 18 4 276"/>
+  <property name="Floors" value="8 8 bed 5 4 5 16 bath 11 3 1 3 V 10 5 1 8 V 7 4"/>
+  <property name="Light" value="9 6 5 11 6 5"/>
+  <property name="NightTiles" value="Back 11 1 528 Back 12 1 529 Back 13 1 530 Back 14 1 531 Back 15 1 532 Back 16 1 533 Back 17 1 534 Back 18 1 535 Back 11 2 550 Back 12 2 551 Back 13 2 552 Back 14 2 553 Back 15 2 554 Back 16 2 555 Back 17 2 556 Back 18 2 557 Buildings 11 3 572 Buildings 12 3 573 Buildings 13 3 574 Buildings 14 3 575 Buildings 15 3 576 Buildings 16 3 577 Buildings 17 3 578 Buildings 18 3 579 Back 11 4 231 Back 12 4 232 Back 13 4 231 Back 14 4 232 Back 15 4 231 Back 16 4 232 Back 17 4 231 Back 18 4 232"/>
+  <property name="Walls" value="11 1 windowsmall 8 3 1 1 V 10 3"/>
+  <property name="Warp" value="3 12 Farm 64 15"/>
+  <property name="asdf" type="bool" value="false"/>
+ </properties>
+ <tileset firstgid="1" name="indoor" tilewidth="16" tileheight="16" tilecount="0" columns="0">
+  <image source="townInterior"/>
+ </tileset>
+ <tileset firstgid="1" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="0" columns="0">
+  <image source="farmhouse_tiles"/>
+ </tileset>
+ <tileset firstgid="1" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="0" columns="0">
+  <image source="walls_and_floors.png"/>
+ </tileset>
+ <tileset firstgid="1" name="z_sgf_v2" tilewidth="16" tileheight="16" tilecount="3" columns="0">
+  <image source="spring_sgf_v2.png"/>
+  <tile id="352">
+   <animation>
+    <frame tileid="352" duration="250"/>
+    <frame tileid="374" duration="250"/>
+    <frame tileid="396" duration="250"/>
+    <frame tileid="397" duration="250"/>
+    <frame tileid="398" duration="250"/>
+    <frame tileid="399" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="423">
+   <animation>
+    <frame tileid="423" duration="250"/>
+    <frame tileid="418" duration="250"/>
+    <frame tileid="419" duration="250"/>
+    <frame tileid="420" duration="250"/>
+    <frame tileid="421" duration="250"/>
+    <frame tileid="422" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="445">
+   <animation>
+    <frame tileid="445" duration="250"/>
+    <frame tileid="440" duration="250"/>
+    <frame tileid="441" duration="250"/>
+    <frame tileid="442" duration="250"/>
+    <frame tileid="443" duration="250"/>
+    <frame tileid="444" duration="250"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="1" name="Back" width="20" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt0UsOAUEUheG6eyDe1oKBMGfKnNWwCftgQHvtwNuAsTl+6XRS0qnuVBEScZIvJ6n07cdtpb6XMSbwMMUMcyywdLjfCmtssMUOexxwdLjfxWEmKglRKinmts0Vt4i2zQnniLZNim9KI4MscsijgKLD9wYZMjuScLumw2xXwu2aBrNNCfen3s+0n6Bt38/0/Li23U9cm9JDX+sS15ZRkefzR7/j//5qgj3VtL3VX9jTAC3mq5q2+Of/+LkDaBJJpw==
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back">
+  <object id="1" name="TileData" x="144" y="128" width="16" height="16">
+   <properties>
+    <property name="DefaultBedPosition" value="t"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="48" y="176" width="16" height="16">
+   <properties>
+    <property name="NoFurniture" value="t"/>
+   </properties>
+  </object>
+  <object id="3" name="TileData" x="144" y="272" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
+   </properties>
+  </object>
+  <object id="4" name="TileData" x="144" y="288" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="ChangeIntoSwimsuit"/>
+   </properties>
+  </object>
+  <object id="5" name="TileData" x="192" y="304" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="PoolEntrance"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="3" name="Buildings" width="20" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzTZ2BgSKASNgJibwbqAc8BNq+SkYHhC5D+CsTfgPg7EP8A4p9A/GsQuG8wmmcKDDMzIGZiYmAwB9IWjJBwHCzuG2jzCoHYFEmsm0LzGKBmmkCxGRXMQwaU+J9e5lUhYUs0eSs0eWLMWwBMrwuB+AyOdAuSPwvE54DYmAER9iU4zCMFYHMTMpgNxHOINEseiBWIUAcyE5Qm3YH+8QDiRCjtAfW/F9SfxJgFAyB/x+IIvwRGwv7EZl4xUF8JEJei4TIyzEPOM9gwtrikBQAAHwovcw==
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="6" name="TileData" x="16" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="kitchen"/>
+   </properties>
+  </object>
+  <object id="7" name="TileData" x="32" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="kitchen"/>
+   </properties>
+  </object>
+  <object id="8" name="TileData" x="48" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="kitchen"/>
+   </properties>
+  </object>
+  <object id="9" name="TileData" x="64" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="kitchen"/>
+   </properties>
+  </object>
+  <object id="10" name="TileData" x="80" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="kitchen"/>
+   </properties>
+  </object>
+  <object id="11" name="TileData" x="240" y="256" width="16" height="16">
+   <properties>
+    <property name="Action" value="EnterSewer"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Front" width="20" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt0zkKwlAUheF30zluwXE9LsBWF2CpG7DQTjehG1ArbZ0LhZTOhYJrUP/iwQuBKJiABnLg4wbu85CQqNTvUhGlpswZ5lhgiRXWX/btmHsccMQJZ1yCuOE/SIxnjMNGAknx15fh91ndkWPmffa9S53uhpjrKOFIySGFjX53W2batbfF8ErVoYCrPntjFl37uxheabFrY6DPPPR8itkPMYJlGZ9S5nwXnYC+1Ro9ffQC6mvSM8E4+i+FNi/wSifp
+  </data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="7" name="AlwaysFront" width="20" height="24">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFtATsQMyBhDkpNO8hIwPDIyDmB7IfA+knQOwLxN5A7IPGJgZ8B6r7AcRvgPgnEP8C4mSo3iQ09igYGkCSTIwLbADG/UY88d8ClGuFyscR4b5jQLXHgfg0DjNnAcVnk2AeKWCkmTcKBjcAADLxFSk=
+  </data>
+ </layer>
+ <objectgroup id="8" name="AlwaysFront"/>
+</map>

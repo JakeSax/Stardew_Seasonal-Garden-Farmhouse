@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="36" height="26" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="1">
+ <properties>
+  <property name="DayTiles_asdf" value="Buildings 3 1 15 Buildings 3 2 27 Back 3 4 51 Back 3 5 63"/>
+  <property name="NightTiles_asdf" value="Buildings 3 1 144 Buildings 3 2 156 Back 3 4 53 Back 3 5 65"/>
+  <property name="ViewportFollowPlayer" type="bool" value="true"/>
+  <property name="Warp" value="12 21 Farm 64 15"/>
+  <property name="asdf" type="bool" value="false"/>
+ </properties>
+ <tileset firstgid="1" name="indoor" tilewidth="16" tileheight="16" tilecount="0" columns="0">
+  <image source="1.6/townInterior"/>
+ </tileset>
+ <tileset firstgid="1" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="0" columns="0">
+  <image source="1.6/farmhouse_tiles"/>
+ </tileset>
+ <tileset firstgid="1" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="0" columns="0">
+  <image source="1.6/walls_and_floors"/>
+ </tileset>
+ <tileset firstgid="1" name="z_sgf_v2" tilewidth="16" tileheight="16" tilecount="2" columns="0">
+  <image source="1.6/spring_sgf_v2.png"/>
+  <tile id="509">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="510">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="512" name="indoor" tilewidth="16" tileheight="16" tilecount="0" columns="0">
+  <image source="1.6/townInterior.png"/>
+ </tileset>
+ <layer id="1" name="Back" width="36" height="26">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20MH6AAAADgbw6gAAE=
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="36" height="26">
+  <data encoding="base64" compression="zlib">
+   eJztzkENACAQxMCTBCbABNhAP/vgcQbIktBJ+m8EAOCWdXpFUdU9kTTV3RPJUNM9AQDAxzbCwwKU
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings"/>
+ <layer id="5" name="Front" width="36" height="26">
+  <data encoding="base64" compression="zlib">
+   eJztzrENACAMBLFPRQurMzEFQwQJW7r+EgB+sccNgLfMSlZ1X0C/A9S2AVY=
+  </data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+</map>

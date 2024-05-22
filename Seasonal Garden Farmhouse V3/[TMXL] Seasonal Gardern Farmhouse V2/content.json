@@ -1,0 +1,9 @@
+﻿{
+    "addMaps":
+    [
+        {
+            "name": "RooftopGarden",
+            "file": "assets/RooftopGarden.tbin"
+        }
+    ]
+}

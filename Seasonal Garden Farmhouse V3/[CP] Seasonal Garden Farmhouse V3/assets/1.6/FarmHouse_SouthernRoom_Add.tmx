@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="36" height="36" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="1">
+ <properties>
+  <property name="DayTiles" value="Back 30 4 275 Back 31 4 276 Back 32 4 275 Back 33 4 276 Back 34 4 275 Back 35 4 276 Back 36 4 275 Back 37 4 276 Back 43 15 234 Back 50 15 241 Back 30 1 198 Back 31 1 199 Back 32 1 200 Back 33 1 201 Back 34 1 202 Back 35 1 203 Back 36 1 204 Back 37 1 205 Back 30 2 220 Back 31 2 221 Back 32 2 222 Back 33 2 223 Back 34 2 224 Back 35 2 225 Back 36 2 226 Back 37 2 227 Buildings 30 3 242 Buildings 31 3 243 Buildings 32 3 244 Buildings 33 3 245 Buildings 34 3 246 Buildings 35 3 247 Buildings 36 3 248 Buildings 37 3 249 Back 46 5 17 Back 47 5 18 Back 45 6 38 Back 46 6 39 Back 47 6 40 Back 48 6 41 Back 44 7 59 Back 45 7 60 Back 46 7 61 Back 47 7 62 Back 48 7 63 Back 49 7 64 Back 43 8 80 Back 44 8 81 Back 45 8 82 Back 46 8 83 Back 47 8 84 Back 48 8 85 Back 49 8 86 Back 50 8 87 Back 43 9 102 Back 44 9 103 Back 45 9 104 Back 46 9 105 Back 47 9 106 Back 48 9 107 Back 49 9 108 Back 50 9 109 Back 43 10 124 Back 44 10 125 Back 45 10 126 Back 46 10 127 Back 47 10 128 Back 48 10 129 Back 49 10 130 Back 50 10 131 Back 43 11 146 Back 44 11 147 Back 45 11 148 Back 46 11 149 Back 47 11 150 Back 48 11 151 Back 49 11 152 Back 50 11 153 Back 43 12 168 Back 50 12 175 Back 44 13 191 Back 45 13 192 Back 46 13 193 Back 47 13 194 Back 48 13 195 Back 49 13 196 Back 43 14 212 Back 44 14 213 Back 45 14 214 Back 46 14 215 Back 47 14 216 Back 48 14 217 Back 49 14 218 Back 50 14 219 Buildings 44 12 169 Buildings 45 12 170 Buildings 46 12 171 Buildings 47 12 172 Buildings 48 12 173 Buildings 49 12 174 Buildings 43 13 190 Buildings 50 13 197"/>
+  <property name="DayTiles_asdf" value="Buildings 3 1 15 Buildings 3 2 27 Back 3 4 51 Back 3 5 63"/>
+  <property name="EntryAction" value="Lua this catchMe"/>
+  <property name="Floors" value="15 21 bottom 3 8 18 23 bottom 15 6 1 53 Atic 8 4 1 3 V1 12 6 15 3 V2 13 6 1 12 V3 9 11 10 12 V4 11 8 10 20 V4 3 1 23 12 V5 12 10 33 22 V5 3 1"/>
+  <property name="Lua_catchMe">if Luau.getMapProperty('Farmhouse','fromGarden') == 'T' then
+  Game1.warpFarmer('FarmHouse',37,8,false,3)
+  Luau.setMapProperty('Farmhouse','fromGarden','')
+end</property>
+  <property name="NightTiles" value="Back 30 4 231 Back 31 4 232 Back 32 4 231 Back 33 4 232 Back 34 4 231 Back 35 4 232 Back 36 4 231 Back 37 4 232 Back 43 15 233 Back 50 15 189 Back 30 1 528 Back 31 1 529 Back 32 1 530 Back 33 1 531 Back 34 1 532 Back 35 1 533 Back 36 1 534 Back 37 1 535 Back 30 2 550 Back 31 2 551 Back 32 2 552 Back 33 2 553 Back 34 2 554 Back 35 2 555 Back 36 2 556 Back 37 2 557 Buildings 30 3 572 Buildings 31 3 573 Buildings 32 3 574 Buildings 33 3 575 Buildings 34 3 576 Buildings 35 3 577 Buildings 36 3 578 Buildings 37 3 579 Back 46 5 523 Back 47 5 524 Back 45 6 544 Back 46 6 545 Back 47 6 546 Back 48 6 547 Back 44 7 565 Back 45 7 566 Back 46 7 567 Back 47 7 568 Back 48 7 569 Back 49 7 570 Back 43 8 586 Back 44 8 587 Back 45 8 588 Back 46 8 589 Back 47 8 590 Back 48 8 591 Back 49 8 592 Back 50 8 593 Back 43 9 608 Back 44 9 609 Back 45 9 610 Back 46 9 611 Back 47 9 612 Back 48 9 613 Back 49 9 614 Back 50 9 615 Back 43 10 630 Back 44 10 631 Back 45 10 632 Back 46 10 633 Back 47 10 634 Back 48 10 635 Back 49 10 636 Back 50 10 637 Back 43 11 602 Back 44 11 603 Back 45 11 604 Back 46 11 605 Back 47 11 558 Back 48 11 559 Back 49 11 560 Back 50 11 561 Back 43 12 624 Back 50 12 583 Back 44 13 595 Back 45 13 596 Back 46 13 597 Back 47 13 598 Back 48 13 599 Back 49 13 600 Back 43 14 616 Back 44 14 617 Back 45 14 618 Back 46 14 619 Back 47 14 620 Back 48 14 621 Back 49 14 622 Back 50 14 623 Buildings 44 12 625 Buildings 45 12 626 Buildings 46 12 627 Buildings 47 12 580 Buildings 48 12 581 Buildings 49 12 582 Buildings 43 13 594 Buildings 50 13 601"/>
+  <property name="NightTiles_asdf" value="Buildings 3 1 144 Buildings 3 2 156 Back 3 4 53 Back 3 5 65"/>
+  <property name="ViewportFollowPlayer" type="bool" value="true"/>
+  <property name="Walls" value="30 1 WINDOW 8 3 45 7 WINDOW 4 6 48 20 DIVIDE 5 3 1 10 V1 9 3 14 10 V2 7 3 1 1 V3 12 3 15 1 V4 13 3 23 10 V5 9 3 38 4 P 3 3"/>
+  <property name="Warp" value="12 21 Farm 64 15"/>
+  <property name="asdf" type="bool" value="false"/>
+ </properties>
+ <tileset firstgid="1" name="indoor" tilewidth="16" tileheight="16" tilecount="0" columns="0">
+  <image source="1.6/townInterior"/>
+ </tileset>
+ <tileset firstgid="1" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="0" columns="0">
+  <image source="1.6/farmhouse_tiles"/>
+ </tileset>
+ <tileset firstgid="1" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="0" columns="0">
+  <image source="1.6/walls_and_floors"/>
+ </tileset>
+ <tileset firstgid="1" name="z_sgf_v2" tilewidth="16" tileheight="16" tilecount="2" columns="0">
+  <image source="1.6/spring_sgf_v2.png"/>
+  <tile id="509">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="510">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="512" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="0" columns="0">
+  <image source="1.6/walls_and_floors.png"/>
+ </tileset>
+ <tileset firstgid="512" name="indoor" tilewidth="16" tileheight="16" tilecount="0" columns="0">
+  <image source="1.6/townInterior.png"/>
+ </tileset>
+ <layer id="1" name="Back" width="36" height="36">
+  <data encoding="base64" compression="zlib">
+   eJzt0MEJACAMBMFLZ5oOrcI29R3QnyTCDgTyXE4CAAAAgD80k3xft/NfkRfrmtkBwcgOCNjnrto+AN5b24gFrQ==
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="36" height="36">
+  <data encoding="base64" compression="zlib">
+   eJzt0rENABAQRuFjJtHRmsIQYg1DYwEhQa54X/J3knsFEQAAAADQLRiRaPbetrcpx+hZo2dt9qTNv//D7MmKevxYVdRTxtzrI/ZwwAUdiEMGXw==
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings"/>
+ <layer id="5" name="Front" width="36" height="36">
+  <data encoding="base64" compression="zlib">
+   eJztziEBADAIADAo8rjkRuHvEGwJFgEAAACMyu0Bv952AI5oKrwApg==
+  </data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="7" name="AlwaysFront" width="36" height="36">
+  <data encoding="base64" compression="zlib">
+   eJzt0LENACAIRFFwJqdxCkvZ3sLaGBpE819y4coLIgAAAADwBtN1h+47zlqyP/Vke3BXdSREcSTbnqhN+N4ETiwGEA==
+  </data>
+ </layer>
+ <objectgroup id="8" name="AlwaysFront"/>
+</map>

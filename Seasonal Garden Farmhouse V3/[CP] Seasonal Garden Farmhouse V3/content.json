@@ -1,0 +1,173 @@
+{
+    "Format": "2.0.0",
+    "ConfigSchema":
+    {
+        "Cabin enable":
+        {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "Matching Wall and Floors for Spouse Room":
+        {
+            "AllowValues": "true, false",
+            "Default": "true"
+        }
+    },
+    "Changes":
+    [
+        {
+            "Action": "Load",
+            "Target": "Maps/spring_sgf_v2",
+            "FromFile": "assets/Tilesheets/spring_sgf_v2.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/spring_sgf_v2",
+            "FromFile": "assets/Tilesheets/summer_sgf_v2.png",
+            "When":
+            {
+                "Season": "summer"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/spring_sgf_v2",
+            "FromFile": "assets/Tilesheets/fall_sgf_v2.png",
+            "When":
+            {
+                "Season": "fall"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/spring_sgf_v2",
+            "FromFile": "assets/Tilesheets/winter_sgf_v2.png",
+            "When":
+            {
+                "Season": "winter"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/FarmHouse_Bedroom_Normal",
+            "FromFile": "assets/1.6/FarmHouse_Bedroom_Normal.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/FarmHouse_Bedroom_Open",
+            "FromFile": "assets/1.6/FarmHouse_Bedroom_Open.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/FarmHouse_CornerRoom_Add",
+            "FromFile": "assets/1.6/FarmHouse_CornerRoom_Add.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/FarmHouse_CornerRoom_Remove",
+            "FromFile": "assets/1.6/FarmHouse_CornerRoom_Remove.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/FarmHouse_SouthernRoom_Add",
+            "FromFile": "assets/1.6/FarmHouse_SouthernRoom_Add.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/FarmHouse_SouthernRoom_Remove",
+            "FromFile": "assets/1.6/FarmHouse_SouthernRoom_Remove.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/FarmHouse",
+            "FromFile": "assets/FarmHouse.tmx"
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/FarmHouse",
+            "FromFile": "assets/FarmHouseNonFHRfix.tmx",
+            "FromArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 5,
+                "Height": 4
+            },
+            "ToArea":
+            {
+                "X": 8,
+                "Y": 8,
+                "Width": 5,
+                "Height": 4
+            },
+            "When":
+            {
+                "HasMod |contains=mabelsyrup.farmhouse": false
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/FarmHouse1, Maps/FarmHouse1_marriage",
+            "FromFile": "assets/FarmHouse1_marriage.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/FarmHouse2_marriage, Maps/FarmHouse2",
+            "FromFile": "assets/FarmHouse2_marriage.tmx",
+            "When":
+            {
+                "HasMod |contains=DustBeauty.FlummeEditSGFv2": false
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/Cabin",
+            "FromFile": "assets/FarmHouse.tmx",
+            "When":
+            {
+                "Cabin enable": true
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/Cabin1, Maps/Cabin1_marriage",
+            "FromFile": "assets/FarmHouse1_marriage.tmx",
+            "When":
+            {
+                "Cabin enable": true
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/Cabin2, Maps/Cabin2_marriage",
+            "FromFile": "assets/FarmHouse2_marriage.tmx",
+            "When":
+            {
+                "Cabin enable": true,
+                "HasMod |contains=DustBeauty.FlummeEditSGFv2": false
+            }
+        },
+        {
+            "Action": "EditImage",
+            "PatchMode": "Overlay",
+            "Target": "Maps/townInterior",
+            "FromFile": "assets/townInteriorSGF.png",
+            "When":
+            {
+                "LocationName": "FarmHouse",
+                "Matching Wall and Floors for Spouse Room": true
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "Action": "EditImage",
+            "PatchMode": "Overlay",
+            "Target": "Maps/walls_and_floors",
+            "FromFile": "assets/walls_and_floorsSGF.png",
+            "When":
+            {
+                "HasMod |contains=RusticCountry.wallsandfloors": false
+            }
+        }
+    ]
+}
